@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="mic"
+        android:id="@+id/mic"
+        android:icon="@drawable/ic_bottom_nav_mic"
+        app:showAsAction="ifRoom"/>
+
+    <item android:title="cart"
+        android:id="@+id/cart"
+        android:icon="@drawable/ic_bottom_nav_cart"
+        app:showAsAction="ifRoom"/>
+
+    <item android:title="timer"
+        android:id="@+id/timer"
+        android:icon="@drawable/ic_bottom_nav_timer"
+        app:showAsAction="ifRoom"/>
+
+
+
+</menu>

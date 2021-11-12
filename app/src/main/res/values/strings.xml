@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TestApp</string>
+    <string name="userName">Name</string>
+    <string name="email">Email</string>
+    <string name="userDescription">Description</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="other">Other</string>
+    <string name="Gender">Gender</string>
+    <string name="website">Website</string>
+    <string name="Country">Country</string>
+    <string-array name="countryArray"><item>Australia</item><item>Argentina</item></string-array>
+</resources>

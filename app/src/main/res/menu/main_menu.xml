@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item android:title="menuSetting"
+    android:id="@+id/menuSetting"
+    android:icon="@drawable/ic_settings_icon"
+    app:showAsAction="ifRoom"/>
+
+    <item android:title="backArrow"
+        android:id="@+id/backArrow"
+        android:icon="@drawable/ic_back_arrow"
+        app:showAsAction="ifRoom" />
+</menu>

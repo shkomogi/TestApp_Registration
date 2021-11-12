@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:padding="10dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="30dp"
+        android:visibility="visible"
+         />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userName"
+        android:padding="10dp"
+        android:textSize="18dp"
+        android:layout_toRightOf="@+id/img1"
+        android:singleLine="true"
+        android:hint="@string/userName"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="30dp"
+
+        />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userEmail"
+        android:padding="10dp"
+        android:textSize="18dp"
+        android:layout_toRightOf="@id/img1"
+        android:singleLine="true"
+        android:hint="@string/email"
+        android:layout_below="@+id/userName"
+        android:layout_marginRight="30dp"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userDescription"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:layout_below="@+id/img1"
+        android:layout_marginTop="30dp"
+        android:hint="@string/userDescription"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gendertextView"
+        android:hint="@string/Gender"
+        android:layout_below="@+id/userDescription"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/genderRadioButton"
+        android:padding="10dp"
+        android:layout_below="@id/gendertextView"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/maleGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male"
+            android:checked="true"
+            />
+
+        <RadioButton
+            android:id="@+id/femaleGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female"
+            android:checked="true"
+            />
+
+        <RadioButton
+            android:id="@+id/otherGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/other"
+            android:checked="true"
+            />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/countryTextView"
+        android:hint="@string/Country"
+        android:layout_below="@+id/genderRadioButton"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/countrySpinner"
+        android:layout_below="@+id/countryTextView"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:entries="@array/countryArray"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/websiteEditText"
+        android:layout_below="@+id/countrySpinner"
+        android:hint="@string/website"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/finishButton"
+        android:layout_below="@+id/websiteEditText"
+        android:text="FINISH"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        />
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottommenu"/>
+
+
+
+
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+</RelativeLayout>
